@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Hunter</title>
+
+    <!-- bootdtrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- css link --> <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!-- body start -->
+  <body>
+    <section class="container">
+      <!-- header start -->
+      <h1 class="text-center mb-5 mt-5 text-primary">
+        Find the phone that you are looking for!
+      </h1>
+      <!-- header end -->
+      <!-- error handling -->
+      <p id="error" class="text-center text-danger fw-bold"></p>
+      <!-- search input section start -->
+      <div class="input-group mb-5">
+        <input
+          id="search-input"
+          type="text"
+          class="form-control"
+          placeholder="Search phone"
+          aria-label="Recipient's username with two button addons"
+        />
+        <button
+          onclick="searchButton()"
+          class="btn btn-outline-secondary text-primary fw-bold"
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+      <!-- search input section end -->
+      <!-- append data when click id start-->
+      <div id="append-id" class="row"></div>
+      <!-- append data when click id end-->
+      <!-- display information on ui div-->
+      <div
+        id="append-div"
+        class="row row-cols-1 row-cols-md-3 row-col-lg-4 g-4 mb-5"
+      ></div>
+      <!-- display information on ui div end-->
+    </section>
+    <!-- bootatrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script link -->
+    <script src="js/app.js"></script>
+  </body>
+  <!-- body end -->
+</html>
